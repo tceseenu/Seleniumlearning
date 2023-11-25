@@ -1,22 +1,27 @@
 package week1.day2;
 
-public class IsPrime {
+public class IsPrimeNumber {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int prime = 5;
-		int i,j;
-		j=0;
-		for(i=1;i<=prime;i++) {
-			if(prime%i==0) {
-				j=j+1;
-			}			
+		// Prime Number is  greater than 1 and can be divided by 1 or itself only
+	int number=4;
+	System.out.println("Given Number is :"+number);
+	int count=0;
+	for(int i=1;i<=number;i++) {
+		if(number%i ==0) {
+			count++;
 		}
-		if (j==2) {
-			System.out.println(prime+" is a PRIME number");
-		} else {
-			System.out.println(prime+" is a not a PRIME number");
-		}
-
-
-}}
+	}
+	
+	if(count==2)
+	{
+		System.out.println("Number: "+number +" is a Prime Number");
+		
+	}
+	else {
+		System.out.println("Number : "+number +" is not a Prime Number");
+	}
+	
+}
+	}
+		
