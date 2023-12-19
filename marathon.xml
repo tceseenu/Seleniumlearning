@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Marathon Suite">
+  <test thread-count="3" parallel="classes" name="Marathon Testcases" verbose="10">
+    <classes>
+      <class name="testcases.MarathonFirst"/>
+      <class name="testcases.MarathonSecond"/>
+      <class name="testcases.MarathonThird"/>
+      
+    </classes>
+  </test> <!-- Marathon Testcases -->
+</suite> <!-- Marathon Suite -->
